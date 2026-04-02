@@ -1,4 +1,4 @@
-import scikit as skt
+from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 
 texts = [
@@ -8,6 +8,7 @@ texts = [
     "Excelente atuação, mas o roteiro é fraco."
 ]
 
+# Agora você instancia diretamente a classe importada
 vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform(texts)
 
